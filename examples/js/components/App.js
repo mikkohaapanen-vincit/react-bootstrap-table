@@ -1,4 +1,5 @@
 /* eslint max-len: 0 */
+import PropTypes from 'prop-types';
 import React from 'react';
 import 'toastr/build/toastr.min.css';
 import '../../../css/react-bootstrap-table.css';
@@ -11,7 +12,7 @@ import {
 class App extends React.Component {
 
   static propTypes = {
-    children: React.PropTypes.node
+    children: PropTypes.node
   };
 
   static defaultProps = {};

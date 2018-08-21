@@ -1,5 +1,5 @@
 import classSet from 'classnames';
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 class TableRow extends Component {
 
@@ -87,17 +87,6 @@ class TableRow extends Component {
     }
   }
 }
-TableRow.propTypes = {
-  index: PropTypes.number,
-  isSelected: PropTypes.bool,
-  enableCellEdit: PropTypes.bool,
-  onRowClick: PropTypes.func,
-  onRowDoubleClick: PropTypes.func,
-  onSelectRow: PropTypes.func,
-  onRowMouseOut: PropTypes.func,
-  onRowMouseOver: PropTypes.func,
-  unselectableRow: PropTypes.bool
-};
 TableRow.defaultProps = {
   onRowClick: undefined,
   onRowDoubleClick: undefined

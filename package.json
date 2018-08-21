@@ -67,6 +67,7 @@
   },
   "dependencies": {
     "classnames": "^2.1.2",
+    "prop-types": "^15.6.2",
     "react-toastr": "git+https://github.com/AllenFang/react-toastr.git"
   },
   "peerDependencies": {

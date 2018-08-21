@@ -1,6 +1,6 @@
 /* eslint default-case: 0 */
 /* eslint guard-for-in: 0 */
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import classSet from 'classnames';
 import Const from './Const';
 import Util from './util';
@@ -190,52 +190,6 @@ const filterTypeArray = [];
 for (const key in Const.FILTER_TYPE) {
   filterTypeArray.push(Const.FILTER_TYPE[key]);
 }
-
-TableHeaderColumn.propTypes = {
-  dataField: PropTypes.string,
-  dataAlign: PropTypes.string,
-  headerAlign: PropTypes.string,
-  headerTitle: PropTypes.bool,
-  dataSort: PropTypes.bool,
-  onSort: PropTypes.func,
-  dataFormat: PropTypes.func,
-  csvFormat: PropTypes.func,
-  csvHeader: PropTypes.string,
-  isKey: PropTypes.bool,
-  editable: PropTypes.any,
-  hidden: PropTypes.bool,
-  hiddenOnInsert: PropTypes.bool,
-  searchable: PropTypes.bool,
-  className: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func
-  ]),
-  width: PropTypes.string,
-  sortFunc: PropTypes.func,
-  sortFuncExtraData: PropTypes.any,
-  columnClassName: PropTypes.any,
-  columnTitle: PropTypes.bool,
-  filterFormatted: PropTypes.bool,
-  filterValue: PropTypes.func,
-  sort: PropTypes.string,
-  caretRender: PropTypes.func,
-  formatExtraData: PropTypes.any,
-  filter: PropTypes.shape({
-    type: PropTypes.oneOf(filterTypeArray),
-    delay: PropTypes.number,
-    options: PropTypes.oneOfType([
-      PropTypes.object, // for SelectFilter
-      PropTypes.arrayOf(PropTypes.number) // for NumberFilter
-    ]),
-    numberComparators: PropTypes.arrayOf(PropTypes.string),
-    emitter: PropTypes.object,
-    placeholder: PropTypes.string,
-    getElement: PropTypes.func,
-    customFilterParameters: PropTypes.object
-  }),
-  sortIndicator: PropTypes.bool,
-  export: PropTypes.bool
-};
 
 TableHeaderColumn.defaultProps = {
   dataAlign: 'left',

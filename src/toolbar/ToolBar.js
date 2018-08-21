@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import classSet from 'classnames';
 import Const from '../Const';
 import editor from '../Editor';
@@ -373,26 +373,6 @@ class ToolBar extends Component {
     );
   }
 }
-
-ToolBar.propTypes = {
-  onAddRow: PropTypes.func,
-  onDropRow: PropTypes.func,
-  onShowOnlySelected: PropTypes.func,
-  enableInsert: PropTypes.bool,
-  enableDelete: PropTypes.bool,
-  enableSearch: PropTypes.bool,
-  enableShowOnlySelected: PropTypes.bool,
-  columns: PropTypes.array,
-  searchPlaceholder: PropTypes.string,
-  exportCSVText: PropTypes.string,
-  insertText: PropTypes.string,
-  deleteText: PropTypes.string,
-  saveText: PropTypes.string,
-  closeText: PropTypes.string,
-  clearSearch: PropTypes.bool,
-  ignoreEditable: PropTypes.bool,
-  defaultSearch: PropTypes.string
-};
 
 ToolBar.defaultProps = {
   enableInsert: false,
