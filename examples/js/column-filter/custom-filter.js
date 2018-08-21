@@ -1,5 +1,6 @@
 /* eslint max-len: 0 */
 /* eslint no-unused-vars: 0 */
+import PropTypes from 'react-proptypes';
 import React from 'react';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
@@ -60,9 +61,9 @@ class CheckboxFilter extends React.Component {
 }
 
 CheckboxFilter.propTypes = {
-  filterHandler: React.PropTypes.func.isRequired,
-  textOK: React.PropTypes.string,
-  textNOK: React.PropTypes.string
+  filterHandler: PropTypes.func.isRequired,
+  textOK: PropTypes.string,
+  textNOK: PropTypes.string
 };
 
 CheckboxFilter.defaultProps = {
